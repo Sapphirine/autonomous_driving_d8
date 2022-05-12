@@ -1,0 +1,259 @@
+/* import icons using we love fonts */
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+
+body,html{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+header, footer, div , section  {
+  box-sizing: border-box;
+}
+header:after{
+    content: "";
+    display: block;
+    width: 95%;
+    margin:auto;
+    margin-top: 2px;
+    height: 2px;
+    background-color: #01579B;
+    border-radius: 5px;
+}
+article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+
+/*header*/
+.Overview{
+  padding-bottom: 1em;
+}
+.container{
+  width: 95%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__logo {
+  display: block;
+  height: auto;
+  width:80px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+  width:80px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+.header__title {
+  height:90px;
+  }
+#title {
+  letter-spacing: -1px;
+  margin-left: auto;
+  text-align: right;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top:0.5em;
+  font-size: 4rem;
+  color: #01579B;
+  font-family: 'Cinzel', serif;
+}
+
+
+/*container and images*/
+.container{
+  padding: 1.15rem;
+}
+.image-responsive{
+  width: 60%; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.architecture{
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  width:75%;
+}
+.samples{
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  width:90%;
+}
+.head{
+  text-align: center;
+  color: #01579B;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.2em;
+}
+.names{
+  color: #01579B;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-bottom:10px;
+}
+
+.column-images {
+    width: 100%;
+    padding: 5px;
+}
+.column{
+  float: left;
+  width:25%;
+  padding:5px;
+}
+.samples{
+  width:45%;
+}
+.figures{
+  text-align: center;
+  font-style: oblique;
+  }
+/* Clearfix (clear floats) */
+.sampleimages::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*section*/
+
+.sec.skills {
+    padding-bottom: 1rem;
+}
+.sec {
+    padding: 3rem 1.5rem;
+}
+.has-text-centered {
+    text-align: center !important;
+}
+.boxes.is-narrow {
+    max-width: 1200px;
+}
+.boxes {
+    margin: 0 auto;
+    position: relative;
+}
+.sec.skills .box {
+    padding: 0;
+}
+.box {
+    border-radius: 12px;
+}
+.box {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+    color: #293347;
+    padding: 1.25rem;
+    box-sizing: inherit;
+}
+.sec.skills .box .content .columns {
+    margin-left: 0;
+    margin-right: 0;
+}
+.columns.is-centered {
+    justify-content: initial;
+}
+.sec.skills .box .content .columns .column {
+    padding: 50px 30px;
+    border-bottom: 1px solid #E6ECF8;
+    border-right: 0px solid #E6ECF8;
+}
+.column {
+    display:block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.para{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+h3 {
+  margin-bottom: 0.7em;
+  color: #01579B;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+ h4{
+  color: #01579B;
+  margin-bottom: 0.7em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.sec.skills .box .content .columns .column {
+    border-bottom: 0px solid #E6ECF8;
+    border-right: 1px solid #E6ECF8;
+    padding: 60px 35px;
+}
+.para{
+  font-size: 1.2rem;
+  }
+.lists{
+  font-size: 1.2rem;
+  }
+p{
+  font-size: 1.2rem;
+  text-align: justify;
+  }
+ul{
+  font-size: 1.2rem;
+  text-align: justify;
+  }
+
+/* zocial */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+
+.subs{
+  margin-bottom: 10px;
+}
+
+/*responsive*/
+/*logo*/
+@media screen and (max-width: 549px) {
+  .header__logo {
+    margin-right: 0.5em;
+  }
+  .header__title {
+    margin-left: 0;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 750px){
+.columns{
+      display: flex;
+        }
+}

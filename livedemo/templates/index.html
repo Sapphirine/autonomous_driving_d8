@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <title>
+        Vehicle Detection Demo
+      </title>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="static/scripts/jquery.ezdz.min.css">
+       <link rel="stylesheet" href="static/styles/main.css">
+   </head>
+   <body>
+      <div id="container">
+         <div id="search_console">
+            <center>
+               <form action="/getLane" method="post" enctype="multipart/form-data">
+                  <input name="im" type="file" accept="image/png, image/jpeg">
+                  <br>
+                  <div id="checkb">
+                     <input type="checkbox" name="agree" value="1" checked><font size="1">  I grant Columbia the rights to make use of my uploaded photographs for "academic purposes".</font>
+                  </div>
+                  <br>
+                  
+                  <input type="submit" id="query_box_submit" />
+               </form>
+            </center>
+         </div>
+        <center>
+            <div id="error"><font color="red"></font></div>
+         </center>
+         <br>
+            <div id="sample_queries_container">
+                <center>
+                    <strong>Click on one of the images below to try it !</strong>
+                    <div id="sample_queries_images">
+                        <a href ="/getDemostatic"><img src="static/sampleimages/01.jpg" titles="kitti" style="height: 100%;"></a>
+                        <a href ="/getDemostatic"><img src="static/sampleimages/02.png" title="bosch" style="height: 100%;"></a>
+                        <a href ="/getDemostatic"><img src="static/sampleimages/03.png" title="idd" style="height: 100%;"></a>
+                    </div>
+                </center>
+            </div>
+         
+      </div>
+      <script>
+         setTimeout(fade_out, 5000);
+
+         function fade_out() {
+           $("#error").fadeOut().empty();
+         }
+      </script>
+      <script type="text/javascript" src="static/scripts/lib/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="static/scripts/lib/jquery.form.js"></script>
+      <script src="static/scripts/jquery.ezdz.min.js"></script>
+      <script>
+         $('[type="file"]').ezdz({
+             text: 'Drop a photo here',
+             validators: {
+                 maxWidth:  6000,
+                 maxHeight: 4000
+             },
+             reject: function(file, errors) {
+                 if (errors.mimeType) {
+                     alert(file.name + ' must be an image.');
+                 }
+
+                 if (errors.maxWidth) {
+                     alert(file.name + ' must be width:600px max.');
+                 }
+
+                 if (errors.maxHeight) {
+                     alert(file.name + ' must be height:400px max.');
+                 }
+             }
+         });
+      </script>
+   </body>
+</html>
